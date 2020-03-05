@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "youtubePlayer", "camelCase"],
+    "component-selector": [true, "element", "youtube-player", "kebab-case"]
+  }
+}

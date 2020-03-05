@@ -15,7 +15,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@youtube-player/material": ["libs/material/src/index.ts"],
+      "@youtube-player/ui": ["libs/ui/src/index.ts"],
+      "@youtube-player/core-data": ["libs/core-data/src/index.ts"],
+      "@youtube-player/core-state": ["libs/core-state/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

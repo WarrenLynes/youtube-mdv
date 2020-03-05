@@ -1,0 +1,22 @@
+
+
+<div class="container d-flex">
+
+  <div class="col-6">
+    <youtube-player-list
+      [data]="videos$ | async"
+      [selected]="video$ | async"
+      (selectVideo)="onSelectVideo($event)"
+      (deleteVideo)="onDeleteVideo($event)"
+    ></youtube-player-list>
+  </div>
+
+  <div class="col-6">
+    <youtube-player-form
+      [selected]="video$ | async"
+      (saveVideo)="saveVideo($event)"
+      (deleteVideo)="onDeleteVideo($event)"
+      (resett)="reset()"
+    ></youtube-player-form>
+  </div>
+</div>
